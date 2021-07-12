@@ -1,0 +1,22 @@
+.home .home-inner {
+  width: 400px;
+  margin: auto;
+}
+
+input[type="text"],
+textarea {
+  outline: none;
+  box-shadow: none !important;
+  border: 1px solid #ccc !important;
+}
+
+.home .home-inner .main-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media (max-width: 500px) {
+  .home .home-inner {
+    width: 300px;
+    margin: auto;
+  }
+}

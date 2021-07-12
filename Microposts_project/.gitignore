@@ -1,0 +1,7 @@
+node_modules
+api
+src
+assests-Shortcut
+webpack.config
+package.json
+package-lock.json

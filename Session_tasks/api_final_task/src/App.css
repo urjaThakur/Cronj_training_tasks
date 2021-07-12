@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.table {
+  width: 800px;
+  border-bottom: 2px solid #009879;
+}
+.thead {
+  background-color: #009879;
+}
+
+.button {
+  background-color: #009879;
+  border: 2px solid darkgreen;
+  color: white;
+}

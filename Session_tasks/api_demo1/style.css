@@ -1,0 +1,14 @@
+ul {
+  list-style: none;
+}
+
+.arrange #users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 350px;
+  height: 250px;
+}

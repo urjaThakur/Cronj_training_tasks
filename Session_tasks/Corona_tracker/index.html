@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="display-4 text-center mb-4">CORONA TRACKER</div>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          id="filter"
+          class="form-control"
+          placeholder="Search State"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text" id="search"
+            ><i class="fa fa-search"></i
+          ></span>
+        </div>
+      </div>
+
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <th>Id</th>
+          <th>State</th>
+          <th>Active</th>
+          <th>Confirmed</th>
+          <th>Recovered</th>
+          <th>Deaths</th>
+        </thead>
+        <tbody id="output"></tbody>
+      </table>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

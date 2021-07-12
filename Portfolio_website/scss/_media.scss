@@ -1,0 +1,139 @@
+// Tablets and smaller
+
+@media (max-width: 800px) {
+  #header-main {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
+
+  #about {
+    &-a {
+      .about-info {
+        display: block;
+      }
+
+      .bio-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    }
+
+    &-b {
+      .progress {
+        height: 10px;
+        width: 280px;
+      }
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+    font-size: smaller;
+  }
+  // home
+  #header {
+    &-main {
+      height: 45rem;
+
+      .header-content {
+        text-align: center;
+      }
+    }
+
+    &-about {
+      height: 10rem;
+    }
+  }
+
+  // about
+
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bio-image"
+          "bio";
+      }
+      .bio-image {
+        height: 150px;
+      }
+    }
+
+    &-c {
+      display: none;
+    }
+  }
+  // stack grid columns
+  .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  // contact
+
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+        .phone {
+          margin-bottom: 1rem;
+        }
+
+        .message-input {
+          width: 90%;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #555 dotted;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0.2rem;
+        }
+      }
+    }
+  }
+
+  // footer
+
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+}
+
+// landscape
+
+@media (max-height: 580px) {
+  #header-main {
+    .header-content {
+      padding-top: 1rem;
+    }
+  }
+}

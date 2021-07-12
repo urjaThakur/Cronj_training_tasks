@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Demo Javascript</title>
+  </head>
+  <body>
+    <!-- Start Here-->
+    <div class="home">
+      <div class="container">
+        <div class="card mt-5 home-inner mx-auto">
+          <div class="card-header bg-light">
+            <h3 class="text-center main-title ">Calculator</h3>
+            <div id="input">
+               <input class="form-control" type="text" id="input1" />
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row mb-2">
+              <div class="col-3">
+                <button class="btn btn-danger btn-block" onclick="clr()">C</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-primary btn-block" onclick="set('0')">0</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-primary btn-block" onclick="set('1')">1</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-warning btn-block" onclick="set('*')">*</button>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-3">
+                <button class="btn btn-primary btn-block" onclick="set('2')">2</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-primary btn-block" onclick="set('3')">3</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-primary btn-block" onclick="set('4')">4</button>
+              </div>
+              <div class="col-3">
+                <button class="btn btn-warning btn-block" onclick="set('+')">+</button>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-3">
+              <button class="btn btn-primary btn-block" onclick="set('5')">5</button>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary btn-block" onclick="set('6')">6</button>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary btn-block" onclick="set('7')">7</button>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-warning btn-block" onclick="set('-')">-</button>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-3">
+              <button class="btn btn-primary btn-block" onclick="set('8')">8</button>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary btn-block" onclick="set('9')">9</button>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-success btn-block" onclick="solve()">=</button>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-warning btn-block" onclick="set('/')">/</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
